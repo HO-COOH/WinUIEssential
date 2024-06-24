@@ -29,7 +29,6 @@
 
 		<!--build/native-->
 		<file src="include/**" target="build/native/include"/>
-		<file src="Export.h" target="build/native/include"/>
 		<file src="WinUIEssential.WinUI3.targets" target="build/native"/>
 
 		<!--lib/native(The last item in each group is control resource)-->
@@ -39,9 +38,6 @@
 
 		<file src="..\Release\WinUI3Package\WinUI3Package.dll" target="runtimes\win10-x86\native"/>
 		<file src="..\Release\WinUI3Package\WinUI3Package.pri" target="runtimes\win10-x86\native"/>
-
-		<file src="..\Arm\Release\WinUI3Package\WinUI3Package.dll" target="runtimes\win10-Arm\native"/>
-		<file src="..\Arm\Release\WinUI3Package\WinUI3Package.pri" target="runtimes\win10-Arm\native"/>
 
 		<file src="..\Arm64\Release\WinUI3Package\WinUI3Package.dll" target="runtimes\win10-Arm64\native"/>
 		<file src="..\Arm64\Release\WinUI3Package\WinUI3Package.pri" target="runtimes\win10-Arm64\native"/>

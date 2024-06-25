@@ -16,10 +16,11 @@
 			<Implementation>UWPPackage.dll</Implementation>
         </Reference>
 		<ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(UWPPackage-Platform)\native\UWPPackage.dll" />
+		<ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(UWPPackage-Platform)\native\UWPPackage.pri" />
 	</ItemGroup>
-	<ItemGroup>
+	<!--<ItemGroup>
 		<None Include="$(MSBuildThisFileDirectory)..\..\lib\uap10.0.17763\**\*.xaml" Link="%(RecursiveDir)%(Filename)%(Extension)"  CopyToOutputDirectory="PreserveNewest"></None>
-	</ItemGroup>
+	</ItemGroup>-->
 	<PropertyGroup>
         <BeforeMidlCompileTargets>
             $(BeforeMidlCompileTargets);

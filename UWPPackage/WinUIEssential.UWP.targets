@@ -17,7 +17,9 @@
         </Reference>
 		<ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(UWPPackage-Platform)\native\UWPPackage.dll" />
 	</ItemGroup>
-
+	<ItemGroup>
+		<None Include="$(MSBuildThisFileDirectory)..\..\lib\uap10.0.17763\**\*.xaml" Link="%(RecursiveDir)%(Filename)%(Extension)"  CopyToOutputDirectory="PreserveNewest"></None>
+	</ItemGroup>
 	<PropertyGroup>
         <BeforeMidlCompileTargets>
             $(BeforeMidlCompileTargets);

@@ -22,8 +22,6 @@
 		<file src="..\x64\Release\UWPPackage\UWPPackage.winmd" target="lib\uap10.0.17763"/>
 		<file src="..\x64\Release\UWPPackage\**\*.xaml" target="lib\uap10.0.17763"/>
 		<file src="..\x64\Release\UWPPackage\UWPPackage.xml" target="lib\uap10.0.17763"/>
-		<!--<file src="..\x64\Debug\UWPPackage\UWPPackage\*.xbf" target="runtimes\win10\native\x64\Debug\UWPPackage\"/>-->
-
 		<!--build/native-->
         <file src="include/**" target="build/native/include"/>
         <file src="Export.h" target="build/native/include"/>
@@ -32,7 +30,6 @@
         <!--lib/native(The last item in each group is control resource)-->
 		<file src="..\x64\Release\UWPPackage\UWPPackage.dll" target="runtimes\win10-x64\native"/>
 		<file src="..\x64\Release\UWPPackage\UWPPackage.pri" target="runtimes\win10-x64\native"/>
-
 
 		<file src="..\Release\UWPPackage\UWPPackage.dll" target="runtimes\win10-x86\native"/>
 		<file src="..\Release\UWPPackage\UWPPackage.pri" target="runtimes\win10-x86\native"/>

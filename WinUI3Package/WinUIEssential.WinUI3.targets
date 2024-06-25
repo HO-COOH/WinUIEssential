@@ -11,7 +11,7 @@
 	</PropertyGroup>
 
 	<!--Add dll and xaml here-->
-	<ItemGroup Condition="'$(TargetPlatformIdentifier)' == 'UAP'">
+	<ItemGroup>
 		<Reference Include="$(MSBuildThisFileDirectory)..\..\lib\net6.0-windows10.0.19041.0\WinUI3Package.winmd">
 			<Implementation>WinUI3Package.dll</Implementation>
 		</Reference>

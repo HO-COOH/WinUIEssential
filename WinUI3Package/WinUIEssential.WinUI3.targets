@@ -12,10 +12,13 @@
 
 	<!--Add dll and xaml here-->
 	<ItemGroup>
-		<Reference Include="$(MSBuildThisFileDirectory)..\..\lib\net6.0-windows10.0.19041.0\WinUI3Package.winmd">
+		<Reference Include="$(MSBuildThisFileDirectory)..\..\lib\net6.0-windows10.0.22621.0\WinUI3Package.winmd">
 			<Implementation>WinUI3Package.dll</Implementation>
 		</Reference>
 		<ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(WinUI3Package-Platform)\native\WinUI3Package.dll" />
+		<ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(WinUI3Package-Platform)\native\WinUI3Package.pri" />
 	</ItemGroup>
-
+	<ItemGroup>
+		<None Include="$(MSBuildThisFileDirectory)..\..\lib\net6.0-windows10.0.22621.0\**\*.xaml" Link="%(RecursiveDir)%(Filename)%(Extension)"  CopyToOutputDirectory="PreserveNewest"></None>
+	</ItemGroup>
 </Project>
